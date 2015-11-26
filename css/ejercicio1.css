@@ -1,0 +1,91 @@
+/* Estilos */
+/* Alvaro  */
+*{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	background-color: GhostWhite;
+	display: inline-block;
+	width: 100%;	
+}
+body,header, nav, section,aside, footer{
+	border:1px solid DarkOrange;
+}
+header{
+	text-align: center;
+}
+header,nav{
+	width: 100%;
+}
+section{
+	width: 33.333%;
+	float: left;
+}
+
+article{
+	width: 100%;
+	float: left;
+}
+article > p {
+	border: 1px solid DarkOrange;
+	width: 100%;
+}
+
+aside{
+	width: 33.333%;
+	float: right;
+}
+li {
+	text-align: inherit;
+	list-style: square;
+	list-style-position: inside;
+	display: block;
+}
+section h3 {
+	background-color: orange;
+}
+/*
+section > article:nth-child(2){
+	background-color: blue;
+}
+section > article:nth-child(3){
+	background-color: grey;
+}
+section > article:nth-child(4){
+	background-color: yellow;
+}
+*/
+section > :nth-child(even) {
+	background-color: yellow;
+}
+body > section:nth-child(2) > :nth-child(even){
+	background-color: yellow;
+}
+body > section:nth-child(3) > :nth-child(even){
+	background-color: green;
+}
+section > article > p:first-child{
+	text-align: left;
+}
+section > article > p:nth-child(2){
+	text-align: center;
+}
+section > article > p:last-child{
+	text-align: right;
+}
+
+li a {
+	color: black;
+	border:1px solid Orange;
+	display: block;
+}
+li:last-child a{
+	color: orange;
+}
+
+
+

@@ -1,0 +1,88 @@
+/* estilosanimados.css */
+
+
+@font-face {
+    font-family: 'kaushan';
+    src: url('../fuentes/kaushanscript-regular-webfont.eot');
+    src: url('../fuentes/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('../fuentes/kaushanscript-regular-webfont.woff') format('woff'),
+         url('../fuentes/kaushanscript-regular-webfont.ttf') format('truetype'),
+         url('../fuentes/kaushanscript-regular-webfont.svg#kaushan_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.texto{
+	font-family: 'kaushan';	
+}
+.mover{
+	margin:20px;
+	width: 200px;
+}
+.mover:hover{
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 22;
+	-webkit-animation-name: saltando;
+}
+.texto:hover{
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 22;
+	-webkit-animation-name: colores;
+}
+@-webkit-keyframes moviendo{
+	10%{
+		-webkit-transform: rotate(0deg) scaleY(0.9);
+	}
+	20%{
+		-webkit-transform: rotate(-20deg) scaleY(1.1);
+	}
+	35%{
+		-webkit-transform: rotate(-45deg) scaleY(1.0);
+	}
+	65%{
+		-webkit-transform: rotate(10deg) scaleY(1.0);
+	}
+	80%{
+		-webkit-transform: rotate(-10deg) scaleY(1.0);
+	}
+	100%{
+		-webkit-transform: rotate(0deg) scaleY(1.0);
+	}
+}
+
+@-webkit-keyframes saltando{
+	45%{
+		-webkit-transform: translate(0px,-30px) 
+	}
+	50%{
+		-webkit-transform: translate(0px,-35px);
+	}
+	55%{
+		-webkit-transform: translate(0px,-30px);
+	}
+	90%{
+		-webkit-transform: translate(0px,0px);
+	}
+	100%{
+		-webkit-transform: scaleY(1.0);
+	}
+}
+@-webkit-keyframes colores{
+	25%{
+		color: red;
+	}
+	50%{
+		color: yellow;
+	}
+	75%{
+		color: blue;
+	}
+	100%{
+		color: black;
+	}
+}
