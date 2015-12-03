@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<!--<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">-->
+	<link rel="stylesheet" href="css/formulario.css">
+	<title>Formulario</title>
+</head>
+<body>
+	<script src="js/9-formulario.js"></script>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>Mi formulario</h1>
+				<form action="#recoge-datos.html" method="post" class="form-group" id="myform">
+					<fieldset><legend>Datos conexión</legend>
+						<p><label for="name">Nombre*</label>
+						<input type="text" name="name" pattern="^[a-zA-Z].*" required class="form-control">
+						</p>
+						<p>
+						<label for="name">Password*</label>
+						<input type="password" name="password" pattern=".{8}*" required class="form-control" id="pass">
+						</p>
+					</fieldset>
+					<fieldset><legend>Datos personales</legend>
+						<label for="edad">Edad*</label>
+						<input type="number" name="edad" min="0" max="110" required class="form-control">
+						<label for="edad">Fecha de nacimiento*</label>
+						<input type="date" name="fecha" required class="form-control">
+						<label for="edad">Sexo*</label>
+						<div class="radio">
+							<label>
+								<input type="radio" name="sexo" value="Hombre" required>Hombre
+							</label>
+							<label>
+								<input type="radio" name="sexo" value="Mujer" required>Mujer
+							</label>
+							<label>
+								<input type="radio" name="sexo" value="Otro" required>Otro
+							</label>
+						</div>
+						<label for="edad">E-mail*</label>
+						<input type="email" name="email" required class="form-control">
+						<label for="edad">Tel. fijo</label>
+						<input type="text" name="tel-fijo" pattern="^[8|9]\d{8}$" class="form-control" >
+						<label for="edad">Tel. móvil</label>
+						<input type="text" name="tel-movil" pattern="^[6|7]\d{8}$" class="form-control">
+						<label for="edad">Comentario</label>
+						<textarea name="comentario" cols="30" rows="4" class="form-control"></textarea>
+					</fieldset>
+					<div class="clear-fix">
+						<input type="reset" value="BORRAR" class="btn btn-default">
+						<input type="submit" value=" ENVIAR " id="e"  class="btn btn-primary">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

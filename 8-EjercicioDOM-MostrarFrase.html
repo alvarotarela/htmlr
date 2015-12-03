@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio DOM - contar enlaces</title>
+		<script type="text/javascript">
+			/*window.onload = function(){
+				var mip = document.getElementsByName("intro");
+				mip[0].onclick = function(){
+					var p = document.createElement("p");
+					var texto = document.createTextNode("de cuyo nombre no quiero acordarme...");
+					p.appendChild(texto);
+					p.setAttribute("name","continuacion");
+					var mip2 = document.getElementsByName("continuacion");	
+					if (mip2[0]){
+						mip2[0].parentNode.removeChild(mip2[0]);
+					} else {
+						mip[0].parentNode.appendChild(p);
+					}
+				};
+				mip[0].onmouseover = function(){
+					mip[0].setAttribute("style","color: darkorange");
+				};
+				mip[0].onmouseout = function(){
+					mip[0].setAttribute("style","color: black");
+				};
+			}*/
+
+			window.onload = function(){
+				var mip = document.getElementsByName("intro");
+				var quijote = [
+					"de cuyo nombre no quiero acordarme,",
+					"no ha mucho tiempo que vivía un hidalgo",
+					"de los de lanza en astillero,",
+					"adarga antigua,",
+					"rocín flaco",
+					"y galgo corredor.",
+					"FIN"
+				];
+				parrafo = 0;
+				mip[0].onclick = function(){
+					console.log("Parrafo: " + parrafo);
+					if( parrafo < (quijote.length) ){
+						var p = document.createElement("p");
+						var texto = document.createTextNode(quijote[parrafo]);
+						p.appendChild(texto);
+						p.setAttribute("name","continuacion");
+						mip[0].parentNode.appendChild(p);
+						parrafo = parrafo + 1;
+					} else {
+						
+						parrafo = 0;
+						var pcont = document.getElementsByName("continuacion");
+						while (pcont.firstChild) {
+						  console.log("FIRSTCHILD: " + parrafo);
+						  pcont.parentNode.removeChild(pcont);
+						}
+					}
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<p name="intro">En un lugar de la Mancha...</p>
+	</body>
+</html>

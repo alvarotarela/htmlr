@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12 Menu</title>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/12-jquery-menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/12-jquery-menu.css">
+</head>
+<body>
+	<nav class="menu">
+		<ul>
+			<p>OP1</p>
+			<li>Opcion 1.1</li>
+			<li>Opcion 1.2</li>
+		</ul>
+		<ul>
+			<p>OP2</p>
+			<li>Opcion 2.1</li>
+			<li>Opcion 2.2</li>
+		</ul>
+		<ul>
+			<p>OP3</p>
+			<li>Opcion 3.1</li>
+			<li>Opcion 3.2</li>
+		</ul>
+		<ul>
+			<p>OP4</p>
+			<li>Opcion 4.1</li>
+			<li>Opcion 4.2</li>
+		</ul>
+	</nav>
+</body>
+</html>
