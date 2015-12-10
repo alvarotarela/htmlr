@@ -6,7 +6,7 @@
 	<title>21-webstorage/</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="js/21-webstorage.js"></script>
+	<script src="js/22-webstorage.js"></script>
 </head>
 <body>
 
@@ -15,13 +15,13 @@
 		<form action="" class="form-inline">
 			<div class="form-group">
 				<label for="">Introduce clave</label>
-				<input type="text" class="form-control" id="clave" placeholder="Poner clave">
+				<input type="text" class="form-control input-val" id="clave" placeholder="Poner clave">
 			</div>
 			<div class="form-group">
 				<label>Introduce valor</label>
-				<input type="text" class="form-control" id="valor" placeholder="Poner valor">
+				<input type="text" class="form-control input-val" id="valor" placeholder="Poner valor">
 			</div>
-			<input type="button" id="guardar" class="btn btn-warning" value="guardar">
+			<input type="button" id="guardar" class="btn btn-warning" value="guardar" disabled>
 		</form>
 		<br>
 		<form action="" class="form-inline">
@@ -33,7 +33,7 @@
 				<label for="">Valor encontrado</label>
 				<input type="text" id="valorBuscar" disabled>
 			</div>
-			<button type="button" id="buscar" class="btn btn-primary">Buscar</button>
+			<button type="button" id="buscar" class="btn btn-primary" disabled>Buscar</button> <button type="button" id="buscarTodas" class="btn btn-success">Buscar Todas</button>
 		</form>
 		<br>
 		<form action="" class="form-inline">
@@ -42,8 +42,10 @@
 				<input type="text" class="form-control" id="claveBorrar">
 			</div>
 			<button type="button" id="borrar" class="btn btn-danger">Borrar</button>
+
 		</form>
 		<br>
+		<div id="result"></div>
 
 	</div>
 	
