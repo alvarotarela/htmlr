@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<style>
+		div.caja{
+			border:1px solid darkOrange;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="16-bootweb-index.html"><i class="glyphicon glyphicon-star"></i>Chispas! S.A.</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    	<ul class="nav navbar-nav navbar-right">
+	    		<li class="dropdown">
+	    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Utiles <span class="caret"></span></a>
+	    			<ul class="dropdown-menu">
+	    				<li><a href="16-bootweb-form.html">Formualario de alta</a></li>
+	    				<li><a href="16-bootweb-calc.html">Calculadora</a></li>
+	    			</ul>
+	    		</li>
+	    	</ul>
+	    	<ul class="nav navbar-nav navbar-right">
+	    		<li class="dropdown">
+	    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Config <span class="caret"></span></a>
+	    			<ul class="dropdown-menu">
+	    				<li><a href="#">Frases incompletas</a></li>
+	    			</ul>
+	    		</li>
+	    	</ul>
+	    </div><!-- /.navbar-collapse -->
+	</div><!-- /.container -->
+</nav>
+
+	<!-- MAIN CONTENT -->
+
+	<script src="js/16-formulario.js"></script>
+	<div id="formulario-edit">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>Mi formulario</h1>
+				<form action="#recoge-datos.html" method="post" class="form-group" id="myform">
+					<fieldset><legend>Datos conexión</legend>
+						<p><label for="name">Nombre*</label>
+						<input type="text" name="name" pattern="^[a-zA-Z].*" required class="form-control" value="Alvaro">
+						</p>
+						<p>
+						<label for="name">Password*</label>
+						<input type="password" name="password" pattern=".{8}*" required class="form-control" id="pass" value="12346789AZaz">
+						</p>
+					</fieldset>
+					<fieldset><legend>Datos personales</legend>
+						<label for="edad">Edad*</label>
+						<input type="number" name="edad" min="0" max="110" required class="form-control"  value="20">
+						<label for="edad">Fecha de nacimiento*</label>
+						<input type="date" name="fecha" required class="form-control"  value="1986-10-12">
+						<label for="edad">Sexo*</label>
+						<div class="radio">
+							<label>
+								<input type="radio" name="sexo" value="Hombre" required checked>Hombre
+							</label>
+							<label>
+								<input type="radio" name="sexo" value="Mujer" required>Mujer
+							</label>
+							<label>
+								<input type="radio" name="sexo" value="Otro" required>Otro
+							</label>
+						</div>
+						<label for="edad">E-mail*</label>
+						<input type="email" name="email" required class="form-control"  value="a@b.com">
+						<label for="edad">Tel. fijo</label>
+						<input type="text" name="tel-fijo" pattern="^[8|9]\d{8}$" class="form-control" >
+						<label for="edad">Tel. móvil</label>
+						<input type="text" name="tel-movil" pattern="^[6|7]\d{8}$" class="form-control">
+						<label for="edad">Comentario</label>
+						<textarea name="comentario" cols="30" rows="4" class="form-control"></textarea>
+					</fieldset>
+					<div class="clear-fix">
+						<input type="reset" value="BORRAR" class="btn btn-default">
+						<input type="button" value=" ENVIAR " id="e"  class="btn btn-primary">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div id="formulario-ok" style="display:none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h2>Formulario enviado correctamente!</h2>
+					<p><a href="16-bootweb-index.html" class="btn btn-success">&lt; Volver</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- /MAIN CONTENT-->
+
+    <div class="footer">
+    	<div class="container-fluid">
+    		<p class="text-muted">(c) 2015, Chispas! S.L. | Todos los derechos reservados</p>
+    	</div>
+    </div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
