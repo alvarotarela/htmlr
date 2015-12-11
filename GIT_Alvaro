@@ -1,0 +1,7 @@
+git init
+git config -
+git remote add origin https://github.com/alvarotarela/htmlr.git
+git add *
+git commit -m "Comentario"
+git push -u origin master
+
