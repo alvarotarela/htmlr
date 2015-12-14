@@ -6,24 +6,29 @@
 	<title>23-video/</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="js/23-video.js"></script>
+	<script src="js/26-drag.js"></script>
 	<style>
+		margin: 0;
+		padding: 0;
 		video{
 			width: 80%;
+		}
+		.caja {width:100px;height:50px;background:orange;position:absolute;}
+		canvas{
+			width: 500px;
+			height: 500px;
+			border: 1px solid black;
 		}
 	</style>
 </head>
 <body>
 
-	<div class="container">
-		<br>
-		<div class="row">
-			<video id="video" poster="fotos/beach.jpg" controls width="600px"></video>
-		</div>
-		<div class="row">
-			<button id="full"><span class="glyphicon glyphicon-fullscreen"></span> Full Screen</button>
-		</div>
 
+	<div class="container">
+		<div id="botonmove" class="caja">MUEVEME</div>
+		<div class="row">
+			<canvas id="lienzo" width="500" height="500">Aqui esta lienzo1</canvas>
+		</div>
 	</div>
 	
 </body>

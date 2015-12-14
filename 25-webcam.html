@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>23-video/</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/25-webcam.js"></script>
+	<style>
+		video{
+			width: 80%;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-1">
+				<video  id="camara" controls autoplay width="300px"></video>
+			</div>
+			<div class="col-sm-4 col-sm-offset-1">
+				<canvas id="canvas" width="300px" style="border:1px solid black"></canvas>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="btn-group">
+				<button id="inicio" class="btn btn-warning">Activar Cam</button>
+				<button id="fin" class="btn btn-danger">Parar Cam</button>
+				<button id="foto" class="btn btn-primary">Saca Foto</button>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
